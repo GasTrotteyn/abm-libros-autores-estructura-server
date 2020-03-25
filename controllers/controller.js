@@ -1,0 +1,32 @@
+
+
+function getAutor(req, res) {
+    res.json(autores);
+};
+
+
+module.exports = {
+    getAutor,
+}
+
+let autores = [
+    {
+        id: 1,
+        nombre: "Ursula",
+        apellido: "Lopez",
+        libros: [
+            { id: 1, titulo: "La mano izquierda de la oscuridad" },
+            { id: 2, titulo: "La rueda celeste" }
+        ]
+    },
+    {
+        id: 2,
+        nombre: "Tolkien",
+        apellido: "Perez",
+        libros: [
+            { id: 1, titulo: "El señor de los anillos: La comunidad" },
+            { id: 2, titulo: "El señor: Las dos torres" },
+            { id: 3, titulo: "El señor: El retorno del rey" }
+        ]
+    }
+];
