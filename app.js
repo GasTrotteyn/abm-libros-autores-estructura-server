@@ -11,5 +11,3 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/',rutas);
 
 module.exports = app;
-
-
